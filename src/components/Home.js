@@ -3,7 +3,7 @@ import React from 'react'
 const Home = (props) => {
     return (
         <div className="container">
-            <div className="d-flex justify-content-center align-items-center container p-4 m-4">
+            <div className="d-flex justify-content-center align-items-center container p-2 m-2">
                     <h2>COVID19 INDIA</h2>
                 </div>
             <div className="d-flex justify-content-center align-items-center container">

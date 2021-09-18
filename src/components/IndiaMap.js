@@ -56,18 +56,20 @@ function IndiaMap() {
         .then(result => {
           // console.log();
           setCounter(result);
-          setData(getHeatMapData());
-
+          
+          setTimeout(() => {
+            setData(getHeatMapData());
+         }, 3500);
         });
 }, [])
 
   // will generate random heatmap data on every call
 const getHeatMapData = () => {
   if (counter === null) {
-    console.log('called');
+    // console.log('called');
     return [];
   }else{
-    console.log('called after data');
+    // console.log('called after data');
   return [
     { id: 'AP', state: 'Andhra Pradesh', value: counter.AP.total.confirmed },
     { id: 'AR', state: 'Arunachal Pradesh', value: counter.AR.total.confirmed },
@@ -170,7 +172,7 @@ const [data, setData] = useState(getHeatMapData());
         </ComposableMap>
        
         <div className="d-flex justify-content-center align-items-center container">
-          <button className="mt16" onClick={onChangeButtonClick}>Populate Data on Map</button>
+          <button className="btn btn-info m-2 p-2" onClick={onChangeButtonClick}>Populate Data on Map</button>
         </div>
     </div>
   );

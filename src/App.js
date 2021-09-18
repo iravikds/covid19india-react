@@ -26,7 +26,7 @@ function App() {
   
   return (
     <div className="App">
-      
+      <Header />
       <Home counter={counter} death={death} discharged={discharged}/>
       <IndiaMap />
       <Footer />
