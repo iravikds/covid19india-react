@@ -56,14 +56,14 @@ function IndiaMap() {
         .then(result => {
           // console.log();
           setCounter(result);
-          
-          setTimeout(() => {
-            setData(getHeatMapData());
-         }, 3500);
-        });
-}, [])
 
-  // will generate random heatmap data on every call
+        });
+        if(counter){
+          setData(getHeatMapData());
+        }
+}, [counter])
+
+
 const getHeatMapData = () => {
   if (counter === null) {
     // console.log('called');
@@ -89,14 +89,14 @@ const getHeatMapData = () => {
     { id: 'ML', state: 'Meghalaya', value: counter.ML.total.confirmed },
     { id: 'MZ', state: 'Mizoram', value: counter.MZ.total.confirmed },
     { id: 'NL', state: 'Nagaland', value: counter.NL.total.confirmed },
-    { id: 'OR', state: 'Odisha', value: counter.OR.total.confirmed },
+    { id: 'OD', state: 'Odisha', value: counter.OR.total.confirmed },
     { id: 'PB', state: 'Punjab', value: counter.PB.total.confirmed },
     { id: 'RJ', state: 'Rajasthan', value: counter.RJ.total.confirmed },
     { id: 'SK', state: 'Sikkim', value: counter.SK.total.confirmed },
     { id: 'TN', state: 'Tamil Nadu', value: counter.TN.total.confirmed },
-    { id: 'TG', state: 'Telangana', value: counter.TG.total.confirmed },
+    { id: 'TS', state: 'Telangana', value: counter.TG.total.confirmed },
     { id: 'TR', state: 'Tripura', value: counter.TR.total.confirmed },
-    { id: 'UT', state: 'Uttarakhand', value: counter.UT.total.confirmed },
+    { id: 'UK', state: 'Uttarakhand', value: counter.UT.total.confirmed },
     { id: 'UP', state: 'Uttar Pradesh', value: counter.UP.total.confirmed },
     { id: 'WB', state: 'West Bengal', value: counter.WB.total.confirmed },
     { id: 'WB', state: 'West Bengal', value: counter.WB.total.confirmed },
@@ -115,12 +115,12 @@ const [data, setData] = useState(getHeatMapData());
 
     
 
-  const gradientData = {
-    fromColor: COLOR_RANGE[0],
-    toColor: COLOR_RANGE[COLOR_RANGE.length - 1],
-    min: 0,
-    max: data.reduce((max, item) => (item.value > max ? item.value : max), 0)
-  };
+  // const gradientData = {
+  //   fromColor: COLOR_RANGE[0],
+  //   toColor: COLOR_RANGE[COLOR_RANGE.length - 1],
+  //   min: 0,
+  //   max: data.reduce((max, item) => (item.value > max ? item.value : max), 0)
+  // };
 
   const colorScale = scaleQuantile()
     .domain(data.map(d => d.value))
