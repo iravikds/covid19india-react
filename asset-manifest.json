@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/covid19india-react/static/css/main.fc83eac5.chunk.css",
-    "main.js": "/covid19india-react/static/js/main.c02fb093.chunk.js",
-    "main.js.map": "/covid19india-react/static/js/main.c02fb093.chunk.js.map",
+    "main.js": "/covid19india-react/static/js/main.f521de2a.chunk.js",
+    "main.js.map": "/covid19india-react/static/js/main.f521de2a.chunk.js.map",
     "runtime-main.js": "/covid19india-react/static/js/runtime-main.424d85b9.js",
     "runtime-main.js.map": "/covid19india-react/static/js/runtime-main.424d85b9.js.map",
     "static/css/2.fab06bbd.chunk.css": "/covid19india-react/static/css/2.fab06bbd.chunk.css",
@@ -14,14 +14,13 @@
     "static/css/2.fab06bbd.chunk.css.map": "/covid19india-react/static/css/2.fab06bbd.chunk.css.map",
     "static/css/main.fc83eac5.chunk.css.map": "/covid19india-react/static/css/main.fc83eac5.chunk.css.map",
     "static/js/2.d925f678.chunk.js.LICENSE.txt": "/covid19india-react/static/js/2.d925f678.chunk.js.LICENSE.txt",
-    "static/media/bootstrap-icons.css": "/covid19india-react/static/media/bootstrap-icons.dfd0ea12.woff2",
-    "static/media/logo.6ce24c58.svg": "/covid19india-react/static/media/logo.6ce24c58.svg"
+    "static/media/bootstrap-icons.css": "/covid19india-react/static/media/bootstrap-icons.dfd0ea12.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.424d85b9.js",
     "static/css/2.fab06bbd.chunk.css",
     "static/js/2.d925f678.chunk.js",
     "static/css/main.fc83eac5.chunk.css",
-    "static/js/main.c02fb093.chunk.js"
+    "static/js/main.f521de2a.chunk.js"
   ]
 }
